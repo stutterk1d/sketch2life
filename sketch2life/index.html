@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sketch2Life!</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">Sketch2Life!</div>
+        <canvas id="drawingCanvas" width="1000" height="512"></canvas>
+        <div id="buttonContainer">
+            <button id="drawBtn" onclick="setDraw()">Draw</button>
+            <button id="eraseBtn" onclick="setErase()">Erase</button>
+            <button id="processBtn" onclick="processSketch()">Convert Sketch to Image</button>
+            <div id="progressBar" style="display:none;"></div>
+            <div id="spinner" style="display:none;">Loading...</div>
+        </div>
+        <img id="outputImage" src="" alt="Generated Image">
+    </div>
+    <div id="about">
+        <h2>About This Project</h2>
+<p>Ever wondered what your doodles would look like if they leapt off the page? That's what Sketch2Life aims to do—turn your casual doodles into captivating, lifelike images. 🎨➡️🖼️</p>
+
+<h3>How Does This Magic Work?</h3>
+<ul>
+    <li><strong>Your Canvas Awaits:</strong> Grab your digital pencil and start doodling on our interactive canvas.</li>
+    <li><strong>Neural Network Does Its Thing:</strong> The specialized GAN model takes over, treating your doodles like a muse and transforming them into something more... realistic.</li>
+    <li><strong>Voila, It's Art:</strong> A lifelike image crafted from your doodle appears. Who knew you had it in you? 🎉</li>
+</ul>
+
+<h3>Why Should You Care?</h3>
+<ul>
+    <li><strong>Be a Critic:</strong> Your ratings help us fine-tune the model. Be part of the magic!</li>
+    <li><strong>Global Inspiration:</strong> Scroll through our community gallery. Doodles turned art, from all corners of the globe.</li>
+</ul>
+
+<p>We've got computational horsepower under the hood, so your art might take a moment to appear. It's worth it—promise! Oh, and your doodles? We treat them like a secret recipe—safe and sound for model improvement only.</p>
+
+<p>Ready to give your doodles a second life? 🌟</p>
+
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
+
+

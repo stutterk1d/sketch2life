@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+    background-color: #FED138;  /* Google Quickdraw yellow */
+}
+
+#container {
+    margin: 2em auto;
+    padding: 1em;
+    width: 1100px;
+    background-color: #ffffff;  /* White for the container */
+    border: 2px solid #c3c3c3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+    background-color: #FED138;
+    color: black;
+    padding: 0.5em;
+    font-size: 2em;
+}
+
+#drawingCanvas {
+    border: 1px solid #c3c3c3;
+    width: 1000px;
+    height: 512px;
+}
+
+#buttonContainer {
+    text-align: center;
+}
+
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Patrick Hand', cursive;  
+}
+
+button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#drawBtn {
+    background-color: #FED138;
+    color: black;
+}
+
+#eraseBtn {
+    background-color: #FED138;
+    color: black;
+}
+
+#processBtn {
+    background-color: #FED138;
+    color: black;
+}
+
+#about {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #ffffff;
+    border: 2px solid #c3c3c3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#progressBar {
+    width: 100%;
+    background-color: #ccc;
+}
+
+#spinner {
+    border: 8px solid #ccc;
+    border-top: 8px solid #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
